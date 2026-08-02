@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1>🌤 Weather App</h1>
+
+            <button id="themeBtn">🌙</button>
+
+        </header>
+
+        <!-- Search Section -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter City Name">
+
+            <button id="searchBtn">
+
+                Search
+
+            </button>
+
+        </div>
+
+        <!-- Loading -->
+
+        <div id="loading">
+
+            Loading...
+
+        </div>
+
+        <!-- Error -->
+
+        <div id="error">
+
+        </div>
+
+        <!-- Weather Card -->
+
+        <div class="weather-card">
+
+            <h2 id="city">
+
+                City Name
+
+            </h2>
+
+            <img
+                id="weatherIcon"
+                src=""
+                alt="Weather Icon">
+
+            <h1 id="temperature">
+
+                0°C
+
+            </h1>
+
+            <p id="description">
+
+                Weather Description
+
+            </p>
+
+            <div class="details">
+
+                <div class="detail-box">
+
+                    <h3>Feels Like</h3>
+
+                    <p id="feelsLike">0°C</p>
+
+                </div>
+
+                <div class="detail-box">
+
+                    <h3>Humidity</h3>
+
+                    <p id="humidity">0%</p>
+
+                </div>
+
+                <div class="detail-box">
+
+                    <h3>Wind</h3>
+
+                    <p id="wind">0 km/h</p>
+
+                </div>
+
+                <div class="detail-box">
+
+                    <h3>Pressure</h3>
+
+                    <p id="pressure">0 hPa</p>
+
+                </div>
+
+                <div class="detail-box">
+
+                    <h3>Visibility</h3>
+
+                    <p id="visibility">0 km</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Forecast -->
+
+        <section class="forecast">
+
+            <h2>
+
+                5-Day Forecast
+
+            </h2>
+
+            <div id="forecastCards">
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
